@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :comments
 root 'pages#home'
 
 get 'about' => 'pages#about'
@@ -43,8 +44,7 @@ resources :articles
 
   # Example resource route with more complex sub-resources:
   #   resources :products do
-  #     resources :comments
-  #     resources :sales do
+  #     #     resources :sales do
   #       get 'recent', on: :collection
   #     end
   #   end
